@@ -1,1 +1,255 @@
 
+/* AJ ROBOTICS LAB - MAIN STYLESHEET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #071525;
+    color: #ffffff;
+    line-height: 1.7;
+}
+
+/* HEADER */
+
+header {
+    background: #0b2038;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #28aaff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ffffff;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #28aaff;
+}
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px;
+
+    background:
+        radial-gradient(circle at top right, #164b7b, transparent 45%),
+        linear-gradient(135deg, #071525, #0b2947);
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.tagline {
+    color: #28aaff;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(35px, 6vw, 60px);
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #28aaff;
+}
+
+.hero-content p {
+    color: #c6d8e9;
+    font-size: 17px;
+}
+
+/* BUTTON */
+
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 13px 28px;
+    background: #168ce0;
+    color: white;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0871bd;
+    transform: translateY(-3px);
+}
+
+/* GENERAL SECTIONS */
+
+.section {
+    padding: 75px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    color: #28aaff;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.section-text {
+    max-width: 850px;
+    margin: auto;
+    color: #c6d8e9;
+}
+
+.dark-section {
+    background: #0b2038;
+}
+
+/* TECHNOLOGY CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 22px;
+    margin-top: 40px;
+}
+
+.card {
+    background: #102c49;
+    padding: 30px 20px;
+    border: 1px solid #17649b;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    border-color: #28aaff;
+    box-shadow: 0 10px 25px rgba(0, 140, 255, 0.15);
+}
+
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #28aaff;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #c6d8e9;
+    font-size: 14px;
+}
+
+/* PROJECT CARDS */
+
+.project-card {
+    max-width: 750px;
+    margin: 22px auto;
+    padding: 25px;
+    text-align: left;
+    background: #102c49;
+    border-left: 4px solid #28aaff;
+    border-radius: 8px;
+}
+
+.project-card h3 {
+    color: #28aaff;
+}
+
+.project-card p {
+    color: #c6d8e9;
+}
+
+.project-card span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #70c7ff;
+    font-size: 13px;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 35px 20px;
+    background: #06101e;
+    color: #b8cce0;
+}
+
+footer h3 {
+    color: #28aaff;
+    margin-bottom: 10px;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 650px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        min-height: 430px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .section {
+        padding: 55px 6%;
+    }
+
+    .section h2 {
+        font-size: 26px;
+    }
+
+}
+
