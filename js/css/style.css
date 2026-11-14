@@ -1,0 +1,59 @@
+
+/* LOGIN AND SIGN-UP PAGES */
+
+.auth-container {
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+.auth-box {
+    background: #ffffff;
+    color: #172033;
+    width: 100%;
+    max-width: 420px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+}
+
+.auth-box h2 {
+    text-align: center;
+}
+
+.auth-box label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.auth-box input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 7px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.auth-box button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 20px;
+    background: #0875df;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.auth-box button:hover {
+    background: #005bb5;
+}
+
+.auth-box a {
+    color: #0875df;
+    text-decoration: none;
+}
